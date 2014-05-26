@@ -1,0 +1,25 @@
+{
+  "name": "geo-enem",
+  "version": "0.0.1",
+  "author": "Leandro Costa <leandro.costa@gmail.com>",
+  "description": "Geo Enem",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leandrocosta/geo-enem"
+  },
+  "scripts": {
+    "test": "grunt travis"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-connect-proxy": "~0.1.8",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-csslint": "~0.2.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-jsvalidate": "~0.2.2",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "bower": "~1.3.1",
+    "grunt-bower-requirejs": "~0.10.0"
+  }
+}
