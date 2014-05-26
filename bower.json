@@ -1,0 +1,12 @@
+{
+  "name": "geo-enem",
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "jquery": "~2.1.0",
+    "requirejs": "~2.1.11",
+    "requirejs-text": "~2.0.10",
+    "openlayers": "http://openlayers.org/download/OpenLayers-2.13.1.tar.gz",
+    "pure": "~0.4.2",
+    "backbone-forms": "~0.14.0"
+  }
+}

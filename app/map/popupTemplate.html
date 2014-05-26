@@ -1,0 +1,42 @@
+<table class="pure-table pure-table-bordered" style="margin:22px;margin-bottom:12px;margin-right:0">
+	<thead>
+		<tr style="background:#c0c0c0;">
+			<th></th>
+			<th></th>
+			<th colspan="2" style="text-align:center;">Candidatos</th>
+			<th colspan="6" style="text-align:center;">Notas</th>
+		</tr>
+		<tr>
+			<th>Município</th>
+			<th>Ano</th>
+			<th>Inscritos</th>
+			<th>Presentes</th>
+			<th>CN</th>
+			<th>CH</th>
+			<th>LC</th>
+			<th>MT</th>
+			<th>Redação</th>
+			<th>Média</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% _.each(features, function(feature, idx, arr) {%>
+		<% if (idx%2 === 0) { %>
+		<tr class="pure-table-odd">
+		<% } else { %>
+		<tr>
+		<% } %>
+			<td><%=feature.properties.nm_nng%> (<%=feature.properties.uf%>)</td>
+			<td><%=feature.id.substring(8,12)%></td>
+			<td><%=feature.properties.candidatos_count%></td>
+			<td><%=feature.properties.notas_count%></td>
+			<td><%=feature.properties.nu_nt_cn_avg.toFixed(2)%></td>
+			<td><%=feature.properties.nu_nt_ch_avg.toFixed(2)%></td>
+			<td><%=feature.properties.nu_nt_lc_avg.toFixed(2)%></td>
+			<td><%=feature.properties.nu_nt_mt_avg.toFixed(2)%></td>
+			<td><%=feature.properties.nu_nota_redacao_avg.toFixed(2)%></td>
+			<td><%=feature.properties.nu_nota_media_avg.toFixed(2)%></td>
+		</tr>
+		<%});%>
+	</tbody>
+</table>

@@ -1,0 +1,50 @@
+html, body, .content-wrapper, .olMap { /*#map {*/
+	height:100%;
+}
+
+body {
+	margin:0;
+}
+
+.content-wrapper {
+    height:100%;
+    /*padding-top:37px;*/
+}
+
+.map-legend {
+    position:absolute;
+    bottom:30px;
+    right:20px;
+    z-index:1000;
+    background-color: #FFF;
+    border: 1px solid #eee;
+    border-radius:4px;
+    padding: 1em;
+}
+
+.map-legend p {
+    margin-top:0;
+}
+
+.pure-menu.pure-menu-open.pure-menu-horizontal {
+	/*background-color: rgba(200, 200, 200, 0.5);*/
+	/*background:#CCC;
+	opacity:.7;*/
+    position:absolute;
+    z-index:1000;
+    background: rgba(0, 60, 136, 0.3);
+    /*font-weight:bold;*/
+    /*background: #000;
+    color: rgba(100, 100, 200, 0.5);*/
+}
+
+.pure-menu.pure-menu-open.pure-menu-horizontal .pure-menu-heading {
+    font-size:1.2em;
+}
+.pure-form, .pure-form div {
+	display:inline;
+}
+
+.content-wrapper .olControlZoom { /*, .content-wrapper .olControlLayerSwitcher {*/
+    top:62px;
+}
